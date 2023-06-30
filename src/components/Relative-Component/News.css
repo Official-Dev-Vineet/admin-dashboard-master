@@ -1,0 +1,92 @@
+.news {
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 100px);
+  height:auto;
+  width: 200px;
+  background-color: var(--dark);
+  color: var(--light);
+  z-index: 10;
+  overflow-y: scroll;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  border-radius: 0.5em;
+  animation: opacity 300ms forwards;
+}
+.news::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.news .input-box {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 26px;
+  place-items: center;
+  height: 1.6em;
+  z-index: 1;
+  background-color: var(--dark);
+  border-bottom: 1px solid var(--light);
+}
+.news .input-box input {
+  height: 100%;
+  width: 100%;
+  text-transform: capitalize;
+  padding-left: 1.3em;
+  background-color: transparent;
+  color: var(--light);
+}
+.news .input-box button {
+  background-color: var(--dark-primary);
+  color: var(--light);
+  cursor: pointer;
+}
+.news-list {
+  width: 100%;
+  height: calc(100% - 1.6em);
+  position: relative;
+}
+.news-list li {
+  display: block;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.news-list li span {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  height: 60px;
+  text-decoration: none;
+  color: var(--light);
+}
+.news-list li:hover span {
+  grid-template-columns:0 1fr;
+}
+.news-list li:hover span img {
+  object-fit: contain;
+}
+.news-list li span img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.news-list li span .news-text {
+  padding: 0.5em;
+  text-overflow: ellipsis;
+  background-color: var(--dark-primary);
+}
+.news-list li span .news-text::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.news-list li span h5.title {
+  font-size: 0.6em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.news-list li span p.description {
+  font-size: 0.6em;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0.7;
+}

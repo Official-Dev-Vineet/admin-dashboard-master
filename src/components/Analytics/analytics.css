@@ -1,0 +1,25 @@
+.chart-data{
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.chart-data .chart h3{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.chart:first-child{
+  max-width: 500px;
+}
+.chart{
+  width: 90%;
+}
+@media screen and (max-width: 500px) {
+  .chart:first-child{
+    max-width: 400px;
+  }
+  .chart{
+    width: 100%;
+  }
+}

@@ -1,0 +1,54 @@
+.order {
+  animation: opacity 1s linear alternate forwards;
+  width: calc(100% - 14rem);
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3em 0;
+  border-bottom: 0.2em solid var(--primary);
+  font-size: 0.8em;
+}
+.filter ul {
+  display: flex;
+  gap: 1.5em;
+}
+.filter ul li {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.filter ul li.active {
+  color: var(--primary);
+  opacity: 1;
+}
+.time {
+  display: flex;
+  gap: 1em;
+}
+.time span {
+  font-weight: 500;
+}
+.time input {
+  background-color: var(--dark-gray);
+  padding: 0.5em;
+  color: var(--light);
+  text-transform: uppercase;
+  border-radius: 0.3em;
+}
+.order-details {
+  height: calc(100vh - 215px);
+  overflow: scroll;
+  margin-top: 0.5em;
+}
+.order-details table thead tr{
+  position: sticky;
+  top: 0;
+}
+.order-details tr td,
+.order-details tr th {
+  padding: 0.3em;
+}
+.order-details table tbody tr td:last-child > svg {
+  cursor: pointer;
+}

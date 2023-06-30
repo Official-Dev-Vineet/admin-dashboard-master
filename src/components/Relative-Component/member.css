@@ -1,0 +1,101 @@
+.table {
+  max-width: 100%;
+  margin-block: 2em;
+  border-radius: 1em;
+  overflow: scroll;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  background-color: var(--light);
+  text-transform: capitalize;
+  height: 200px;
+  position: relative;
+}
+.table::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  background-color: var(--dark-gray);
+  color: var(--light);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.table-header::before {
+  content: "";
+  height: 50%;
+  background-color: var(--primary);
+  width: 0.3em;
+  position: absolute;
+  left: 0;
+}
+.table-header h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+.table-header .icon svg {
+  color: inherit;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+table {
+  position: relative;
+  width: 100%;
+}
+table thead tr {
+  position: sticky;
+  top: calc(1.6em + 0.8em);
+  z-index: 1;
+  left: 0;
+  background-color: var(--light);
+}
+table tbody tr:nth-child(odd) {
+  background-color: var(--dark-primary);
+}
+table tbody tr:nth-child(even) {
+  background-color: var(--primary);
+}
+table tbody tr td {
+  color: var(--light);
+  text-align: center;
+  vertical-align: middle;
+}
+table tbody tr td a {
+  color: inherit;
+}
+table tbody tr td a:hover {
+  text-decoration: underline;
+}
+table tbody tr td img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+table tbody tr td:has(img) {
+  padding: 0.3em;
+}
+table tbody tr.table-data {
+  font-size: 14px;
+  empty-cells: hide;
+}
+tbody tr td:not(:last-child) {
+  border-right: 1px solid var(--light);
+}
+table tr td h5 {
+  font-weight: 400;
+  font-size: 1em;
+}
+table tbody tr td p.data {
+  font-size: 0.7em;
+  font-weight: 200;
+}
+@media screen and (max-width: 500px) {
+  .table {
+    height: 250px;
+  }
+}

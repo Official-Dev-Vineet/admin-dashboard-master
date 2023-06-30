@@ -1,0 +1,39 @@
+[
+  {
+    "Skew": {
+      "name": "Skew",
+      "msg-user": ["hello", "how are you", "i'm fine"],
+      "msg-admin": []
+    },
+    "Robert": {
+      "name": "Robert",
+      "msg-user": ["hello", "how are you", "i'm fine"],
+      "msg-admin": []
+    },
+    "jonathan": {
+      "name": "jonathan",
+      "msg-user": ["hello", "how are you", "i'm fine"],
+      "msg-admin": []
+    },
+    "Elli": {
+      "name": "Elli",
+      "msg-user": ["hello", "how are you", "i'm fine"],
+      "msg-admin": []
+    },
+    "Newton": {
+      "name": "Newton",
+      "msg-user": ["hello", "how are you", "i'm fine"],
+      "msg-admin": []
+    },
+    "Fredrick": {
+      "name": "Fredrick",
+      "msg-user": ["hello", "how are you", "i'm fine"],
+      "msg-admin": []
+    },
+    "Saliva": {
+      "name": "Saliva",
+      "msg-user": ["hello", "how are you", "i'm fine"],
+      "msg-admin": []
+    }
+  }
+]

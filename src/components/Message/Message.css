@@ -1,0 +1,106 @@
+.message-area {
+  width: 100%;
+  height: calc(100vh - 155px);
+  background-color: var(--light);
+  border-radius: var(--radius-20);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border: 3px solid var(--dark-primary);
+  overflow: hidden;
+}
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em 1em;
+  align-items: center;
+  border-bottom: var(--primary) 3px solid;
+}
+.message-header .header-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.message-header h3{
+color:var(--dark-primary) ;
+}
+.message-header  span.icon {
+  cursor: pointer;
+  font-size: 1.4em;
+}
+.message main {
+  padding: 0.5em 1em !important;
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+}
+.messages {
+  height: calc(100% - 40px);
+  padding: 0.5em;
+  overflow-y: scroll;
+  width: 100%;
+  padding-bottom: 2em;
+}
+.msg {
+  background-color: var(--dark-primary);
+  color: var(--light);
+  max-width: 70%;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  margin: 1em;
+}
+.message .right{
+  margin-left: auto;
+  background-color: var(--dark) !important;
+}
+.msg h3{
+    font-weight: 300;
+}
+.msg p{
+    margin-left: 1em;
+}
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--light-gray);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0.3em;
+}
+.input-area select{
+    background-color: inherit;
+}
+@media screen and (max-width: 1080px) {
+  .message main {
+    grid-template-columns: 5rem 1fr;
+    gap:1rem;
+  }
+  .message .users{
+    overflow: auto;
+    height: 100%;
+  }
+  .message .user{
+    min-width: unset;
+  }
+  .message .user-details{
+    display: none;
+  }
+}
+@media screen and (max-width:500px) {
+  .message main{
+    grid-template-columns: 1fr;
+    grid-template-rows:100px 1fr;
+  }
+ .message-area{
+  margin-bottom: 3rem;
+ }
+ .message .users ul{
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: stretch;
+  overflow-x: auto;
+  gap: 1rem;
+ }
+}
