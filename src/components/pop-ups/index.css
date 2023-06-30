@@ -47,7 +47,6 @@ small {
   display: grid;
   grid-template-columns: repeat(2, 260px) minmax(180px, 200px) 1fr;
   gap: 2rem;
-  height: 150px;
 }
 .admin-data {
   display: grid;

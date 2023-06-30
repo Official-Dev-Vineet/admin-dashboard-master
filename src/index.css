@@ -77,11 +77,10 @@ html {
 main {
   max-width: calc(1800px - 100px);
   padding: 2rem;
-  opacity: 0;
   animation: opacity 1s linear alternate forwards;
   animation-delay: 1s;
-  height: calc(100vh - 100px);
   overflow-y: auto;
+  height: calc(100vh - 108px);
 }
 
 /* animations  */
