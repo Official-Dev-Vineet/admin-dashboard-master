@@ -109,3 +109,18 @@ main {
   }
   
 }
+@media screen and (max-width:300px) {
+  main {
+    position: relative;
+  }
+  main section,
+  main h4,
+  main p,
+  main small{
+    display: none;
+  }
+  main::after{
+    content: "Your browser screen does not support our website 🥲. Please use a different browser or change your browser rotation or display.";
+  }
+  
+}
