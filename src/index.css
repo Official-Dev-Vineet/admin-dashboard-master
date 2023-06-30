@@ -98,9 +98,8 @@ main {
   width: 0;
   height: 0;
 }
-@media screen and (max-width:500px) {
-  main{
+@media screen and (max-width: 500px) {
+  main {
     padding: 1rem;
-    }
-  
+  }
 }

@@ -2,9 +2,7 @@ aside {
   position: absolute;
   z-index: 1;
   top: 40px;
-  height: calc(100vh - 2.5rem);
   width: 12rem;
-  background-color: #fff;
   box-shadow: 0 0 60px var(--light-shadow);
   border-radius: 0 0 1em 0;
   white-space: nowrap;
@@ -131,7 +129,6 @@ aside .top h2 {
   color: var(--primary);
 }
 .last {
-  height: auto;
   display: flex;
   align-items: center;
   padding-left: 1em;

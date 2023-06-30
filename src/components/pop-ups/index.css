@@ -194,6 +194,10 @@ small {
   .summary .admin-data {
     grid-template-columns: 1fr;
   }
+  .member {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 @media screen and (max-width: 500px) {
   .header {
@@ -212,10 +216,7 @@ small {
   .rating .box .icon {
     padding: 1em;
   }
-  .member {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
+ 
 }
 @media screen and (max-width: 300px) {
   .summary {

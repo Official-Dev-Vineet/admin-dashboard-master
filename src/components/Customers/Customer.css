@@ -5,6 +5,7 @@
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   border-radius: 1em;
   padding: 1em;
+  overflow:auto;
 }
 .users::-webkit-scrollbar {
   width: 0;

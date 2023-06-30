@@ -1,5 +1,4 @@
 import MainHeader from "../pop-ups/MainHeader";
-import "./Dashboard.css";
 import MonthlyChanges from "../Relative-Component/MonthlyChanges";
 import News from "../Relative-Component/News";
 import PersonOutlineSharpIcon from "@mui/icons-material/PersonOutlineSharp";

@@ -72,7 +72,7 @@ color:var(--dark-primary) ;
 .input-area select{
     background-color: inherit;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 800px) {
   .message main {
     grid-template-columns: 5rem 1fr;
     gap:1rem;
