@@ -45,7 +45,7 @@ small {
 }
 .summary {
   display: grid;
-  grid-template-columns: repeat(2, 260px) minmax(180px, 200px) 1fr;
+  grid-template-columns: repeat(3,1fr);
   gap: 2rem;
 }
 .admin-data {
@@ -67,8 +67,7 @@ small {
   transition: all 300ms;
   border-radius: 0.2em;
 }
-.box:hover {
-  transform: scale(0.8);
+ .box:hover {
   background-color: var(--primary);
   color: #fff;
   box-shadow: 0 0 0 1px var(--primary);
@@ -88,9 +87,6 @@ small {
   font-size: 1.5em;
   opacity: 0.8;
   transition: all 300ms;
-}
-.dashboard .box:hover .icon svg {
-  font-size: 2em;
 }
 .dashboard .admin-data .box:nth-child(1) .icon svg {
   color: var(--dark-primary);
@@ -158,24 +154,30 @@ small {
   padding-left: 0.5em;
   color: var(--light);
 }
-.news-toggler {
-  position: relative;
-}
-
-.news-toggler h2 {
-  width: 100%;
-  text-transform: capitalize;
-  font-size: 1em;
-  text-align: center;
-  text-decoration: underline;
-  user-select: none;
-  cursor: pointer;
-}
 .member {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   gap: 2rem;
+}
+@media screen and (max-width: 1000px) {
+  .summary {
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+  }
+  .rating{
+    grid-column: 1/-1;
+  }
+  .rating .box .icon {
+    padding: 1em;
+  }
+  .member{
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .member .table{
+    margin:unset;
+  }
 }
 @media screen and (max-width: 765px) {
   .dashboard {
@@ -186,9 +188,6 @@ small {
     grid-template-columns: repeat(3, minmax(150px, 250px));
     gap: 0.5rem;
     height: auto;
-  }
-  .news-toggler {
-    display: none;
   }
   .summary .admin-data {
     grid-template-columns: 1fr;

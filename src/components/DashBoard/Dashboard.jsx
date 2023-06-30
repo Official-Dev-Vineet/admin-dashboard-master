@@ -1,6 +1,5 @@
 import MainHeader from "../pop-ups/MainHeader";
 import MonthlyChanges from "../Relative-Component/MonthlyChanges";
-import News from "../Relative-Component/News";
 import PersonOutlineSharpIcon from "@mui/icons-material/PersonOutlineSharp";
 import VolumeUpSharpIcon from "@mui/icons-material/VolumeUpSharp";
 import DescriptionSharpIcon from "@mui/icons-material/DescriptionSharp";
@@ -23,10 +22,8 @@ import {
   ratings,
   achievement,
 } from "../../Constants/constants";
-import { useState } from "react";
 import Member from "../Relative-Component/Member";
 const Dashboard = () => {
-  const [toggler, setToggler] = useState(false);
   return (
     <div className="dashboard">
       <MainHeader title="Dashboard">Welcome Back to your dashboard </MainHeader>
@@ -106,19 +103,6 @@ const Dashboard = () => {
                 <h4>{achievement}</h4>
                 <small>achievement</small>
               </div>
-            </div>
-          </div>
-
-          <div className="news-toggler">
-            <h2 onClick={() => setToggler((pre) => !pre)}>
-              {toggler ? "hide news" : "show news"}
-            </h2>
-            <div className="news-list">
-              {toggler ? (
-                <News />
-              ) : (
-                <p style={{ textAlign: "center" }}>hidden successfully</p>
-              )}
             </div>
           </div>
         </section>
