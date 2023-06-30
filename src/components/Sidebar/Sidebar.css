@@ -7,6 +7,8 @@ aside {
   border-radius: 0 0 1em 0;
   white-space: nowrap;
   overflow-y: auto;
+  max-height: 550px;
+  height: 100%;
 }
 aside .top {
   position: sticky;
@@ -74,7 +76,7 @@ aside .top h2 {
   color: var(--dark-gray);
 }
 .middle .menu-links {
-  margin-top: 0.5em;
+  margin-block:0.5em 3em;
 }
 .middle .menu-links ul {
   display: flex;
@@ -100,8 +102,7 @@ aside .top h2 {
   border-radius: 0.3em;
 }
 
-.middle .menu-links ul li a,
-.last a {
+.middle .menu-links ul li a {
   font-size: 0.7em;
   margin-left: 0.6em;
   text-decoration: none;
@@ -128,21 +129,6 @@ aside .top h2 {
 .middle .menu-links ul li:hover a {
   color: var(--primary);
 }
-.last {
-  display: flex;
-  align-items: center;
-  padding-left: 1em;
-}
-
-.last .icon {
-  margin-left: 0.5em;
-  text-align: center;
-}
-.last .icon svg {
-  font-size: 1em;
-  color: var(--danger);
-}
-
 .middle .menu-links ul li a.active {
   color: var(--primary);
 }
