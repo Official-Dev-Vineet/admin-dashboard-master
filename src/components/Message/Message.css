@@ -1,6 +1,6 @@
 .message-area {
   width: 100%;
-  height: calc(100vh - 155px);
+  /* height: calc(100vh - 155px); */
   background-color: var(--light);
   border-radius: var(--radius-20);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);

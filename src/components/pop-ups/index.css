@@ -158,7 +158,8 @@ small {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  gap: 2rem;
+  margin-top: 2rem;
+  gap: 1rem;
 }
 @media screen and (max-width: 1000px) {
   .summary {
@@ -172,7 +173,6 @@ small {
     padding: 1em;
   }
   .member{
-    margin-top: 2rem;
     grid-template-columns: 1fr;
   }
   .member .table{
@@ -194,7 +194,7 @@ small {
   }
   .member {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap:0;
   }
 }
 @media screen and (max-width: 500px) {
@@ -214,7 +214,9 @@ small {
   .rating .box .icon {
     padding: 1em;
   }
- 
+ .member{
+  gap: 1rem;
+ }
 }
 @media screen and (max-width: 300px) {
   .summary {

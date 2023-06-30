@@ -103,3 +103,9 @@ main {
     padding: 1rem;
   }
 }
+@media screen and (min-height: 650px) {
+  main {
+    height:550px;
+  }
+  
+}
